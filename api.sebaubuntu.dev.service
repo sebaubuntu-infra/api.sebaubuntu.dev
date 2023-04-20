@@ -1,0 +1,20 @@
+[Unit]
+Description=api.sebaubuntu.dev service
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+# Change WorkingDirectory with the directory where you have telegramma configs
+WorkingDirectory=/home/seba/api.sebaubuntu.dev
+Environment=LC_ALL=C.UTF-8
+ExecStart=/usr/bin/npm start .
+Type=simple
+Restart=always
+RestartSec=5
+# Don't die if OOM killer kills a subprocess
+OOMPolicy=continue
+# If you want to execute it as non-root (recommended)
+User=seba
+
+[Install]
+WantedBy=multi-user.target

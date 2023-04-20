@@ -1,0 +1,24 @@
+{
+  "name": "api.sebaubuntu.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebaubuntu-infra/api.sebaubuntu.dev.git"
+  },
+  "author": "Sebastiano Barezzi <seba@sebaubuntu.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebaubuntu-infra/api.sebaubuntu.dev/issues"
+  },
+  "homepage": "https://github.com/sebaubuntu-infra/api.sebaubuntu.dev#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "systeminformation": "^5.17.12"
+  }
+}
