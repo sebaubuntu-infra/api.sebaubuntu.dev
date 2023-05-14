@@ -23,7 +23,6 @@ app.use(cors({
 app.get("/", function(req, res) {
 	res.json(
 		{
-			"success": true,
 			"result": "God's In His Heaven, All's Right With The World"
 		}
 	);
