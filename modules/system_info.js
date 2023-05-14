@@ -72,7 +72,7 @@ async function getCpuInfo(apiVersion) {
 		"efficiencyCores": cpu.efficiencyCores ? cpu.efficiencyCores : 0,
 		"processors": cpu.processors,
 		"socket": cpu.socket,
-		"flags": cpu.flags,
+		"flags": cpu.flags.split(" "),
 		"virtualization": cpu.virtualization,
 		"cache": {
 			"l1d": cpu.cache.l1d,
