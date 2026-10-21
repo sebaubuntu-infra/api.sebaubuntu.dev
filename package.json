@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/sebaubuntu-infra/api.sebaubuntu.dev#readme",
   "dependencies": {
-    "cors": "^2.8.5",
+    "cors": "^2.8.6",
     "express": "^5.3.0",
     "systeminformation": "^5.17.12"
   }
