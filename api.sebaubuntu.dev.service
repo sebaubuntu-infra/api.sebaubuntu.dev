@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: Sebastiano Barezzi <seba@sebaubuntu.dev>
+# SPDX-License-Identifier: MIT
+#
+
 [Unit]
 Description=api.sebaubuntu.dev service
 Requires=network-online.target

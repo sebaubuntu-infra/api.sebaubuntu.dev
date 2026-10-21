@@ -1,6 +1,5 @@
 //
-// Copyright (C) 2023 Sebastiano Barezzi <seba@sebaubuntu.dev>
-//
+// SPDX-FileCopyrightText: Sebastiano Barezzi <seba@sebaubuntu.dev>
 // SPDX-License-Identifier: MIT
 //
 
