@@ -3,10 +3,12 @@
 // SPDX-License-Identifier: MIT
 //
 
-const cors = require("cors");
-const express = require("express");
+import cors from "cors";
+import express from "express";
 
-const systemInfo = require('./modules/system_info');
+import { defaultResponse } from "./utils.js";
+
+import systemInfoRouter from './system_info/main.js';
 
 const DEBUG = true;
 const PORT = process.env.PORT || 3000;
@@ -19,15 +21,9 @@ app.use(cors({
 	origin: '*'
 }));
 
-app.get("/", function(req, res) {
-	res.json(
-		{
-			"result": "God's In His Heaven, All's Right With The World"
-		}
-	);
-});
+app.get("/", defaultResponse);
 
-systemInfo.addRoutes(app);
+app.use("/system_info", systemInfoRouter);
 
 // Start the server
 app.listen(PORT, function () {
