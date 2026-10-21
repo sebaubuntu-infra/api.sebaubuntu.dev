@@ -5,7 +5,7 @@
 
 import express from 'express';
 const { Request, Response } = express;
-import { graphics } from 'systeminformation';
+import { gpu } from 'systeminformation';
 
 /**
  * Get information about the GPUs.
@@ -14,9 +14,9 @@ import { graphics } from 'systeminformation';
  * @param {Response} res Response
  */
 export async function gpus(req, res) {
-    const graphicsInfo = await graphics();
+    const gpuInfo = await gpu();
 
-    const result = graphicsInfo.controllers.map((controller) => {
+    const result = gpuInfo.map((controller) => {
         return {
             "vendor": controller.vendor,
             "model": controller.model,

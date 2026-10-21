@@ -19,7 +19,7 @@
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.3.0",
-    "systeminformation": "^5.33.15"
+    "systeminformation": "^6.0.0-beta.18"
   },
   "type": "module"
 }
